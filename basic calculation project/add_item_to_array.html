@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="add_item_to_array.js" defer></script>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+            width: 40%;
+            border: 1px solid black;
+            margin-left: 450px;
+            margin-top: 200px;
+        }
+
+        .box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+        }
+        input {
+            padding: 8px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            outline: none;
+        }
+        button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: black;
+        }
+        p {
+            font-size: 18px;
+            margin-top: 15px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    
+
+
+<div class="box">
+    <input type="text" placeholder="write something here..." id="text"><br><br>
+    <button onclick="add()">Add</button>
+    <button onclick="display()">Display</button><br>
+    <p id="p"></p>
+</div>
+
+</body>
+</html>
